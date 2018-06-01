@@ -13,8 +13,7 @@ syntax on
 " Vim UI
 "--------
 " color scheme
-set background=dark
-color solarized
+colorscheme blackboard
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -161,30 +160,6 @@ let g:user_emmet_expandabbr_key='<C-j>'
 "let g:Powerline_symbols = 'fancy'
 
 " NeoComplCache
-let g:neocomplcache_enable_at_startup=1
-let g:neoComplcache_disableautocomplete=1
-"let g:neocomplcache_enable_underbar_completion = 1
-"let g:neocomplcache_enable_camel_case_completion = 1
-let g:neocomplcache_enable_smart_case=1
-let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-set completeopt-=preview
-
-imap <C-k> <Plug>(neocomplcache_snippets_force_expand)
-smap <C-k> <Plug>(neocomplcache_snippets_force_expand)
-imap <C-l> <Plug>(neocomplcache_snippets_force_jump)
-smap <C-l> <Plug>(neocomplcache_snippets_force_jump)
-
-" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType c setlocal omnifunc=ccomplete#Complete
-if !exists('g:neocomplcache_omni_patterns')
-  let g:neocomplcache_omni_patterns = {}
-endif
-let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 
 " SuperTab
 " let g:SuperTabDefultCompletionType='context'
@@ -196,12 +171,12 @@ set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_S
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 " Keybindings for plugin toggle
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
-nmap <F5> :TagbarToggle<cr>
-nmap <F6> :NERDTreeToggle<cr>
-nmap <F3> :GundoToggle<cr>
-nmap <F4> :IndentGuidesToggle<cr>
+nnoremap <F10> :set invpaste paste?<CR>
+set pastetoggle=<F10>
+nmap <F2> :NERDTreeToggle<cr>
+nmap <F3> :TagbarToggle<cr>
+nmap <F4> :GundoToggle<cr>
+nmap <F5> :IndentGuidesToggle<cr>
 nmap  <D-/> :
 nnoremap <leader>a :Ack
 nnoremap <leader>v V`]

@@ -30,9 +30,11 @@ Such as completions for variable names and function names(neocomplcache), expand
 Compile Vim8 with python for completor.
 
 ``` bash
-brew install macvim --override-system-vim  # OS X
-yaourt -S gvim                             # ArchLinux
-sudo apt-get install vim-gtk               # Ubuntu
+#for Ubuntu Test on Ubuntu16.04
+#install vim8
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
 ```
 
 ### Tutorial

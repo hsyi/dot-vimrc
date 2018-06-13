@@ -104,4 +104,6 @@ Bundle 'rickharris/vim-blackboard'
 "Bundle 'chriskempson/vim-tomorrow-theme'
 "Bundle 'fisadev/fisa-vim-colorscheme'
 
+" protobuf
+Bundle 'uarun/vim-protobuf'
 filetype plugin indent on     " required!
